@@ -965,7 +965,8 @@ def render_sidebar() -> str:
 
         st.markdown(
             '<p style="font-size:.74rem;color:var(--muted-soft);text-align:center;margin-top:1rem;">'
-            'Built with Streamlit · Plotly · Pandas</p>'
+            'Built with Streamlit · Plotly · Pandas</p>',
+            unsafe_allow_html=True,
         )
     return choice
 
